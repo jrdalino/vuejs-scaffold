@@ -101,7 +101,7 @@ $ cd ~/environment/myproject-consumer-web
 $ git init
 $ git add .
 $ git commit -m "Initial Commit"
-$ git remote add origin https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/myproject-consumer-web
+$ git remote add origin https://git-codecommit.us-east-1.amazonaws.com/v1/repos/myproject-consumer-web
 $ git remote -v
 $ git push origin master
 ```
