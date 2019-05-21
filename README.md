@@ -27,7 +27,6 @@ $ git config --global credential.UseHttpPath true
 $ cd ~/environment/
 $ vue init webpack myproject-consumer-web
 $ cd myproject-consumer-web
-$ npm install
 $ npm run dev
 ```
 
@@ -37,63 +36,7 @@ $ aws codecommit create-repository --repository-name myproject-consumer-web
 ```
 
 ### Step 1.3: Set up .gitignore
-```
-$ cd ~/environment/myproject-product-restapi
-$ vi .gitignore
-```
-```
-# Byte-compiled / optimized / DLL files
-__pycache__/
-.api/__pycache__/
-.api/products/__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Virtual environment
-venv
-*.pyc
-```
+- Automatically created by vue init
 
 ### Step 1.2 Import Existing Folder to CodeCommit
 ```
@@ -102,6 +45,7 @@ $ git init
 $ git add .
 $ git commit -m "Initial Commit"
 $ git remote add origin https://git-codecommit.us-east-1.amazonaws.com/v1/repos/myproject-consumer-web
+
 $ git remote -v
 $ git push origin master
 ```
