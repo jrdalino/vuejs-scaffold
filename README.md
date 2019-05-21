@@ -23,7 +23,6 @@ $ git config --global credential.UseHttpPath true
 ```
 
 ### Step 1.1: Initialize Vue Project
-- 
 ```
 $ cd ~/environment/
 $ vue init webpack myproject-consumer-web
@@ -104,5 +103,5 @@ $ git add .
 $ git commit -m "Initial Commit"
 $ git remote add origin https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/myproject-consumer-web
 $ git remote -v
-$ git push -u origin master
+$ git push origin master
 ```
