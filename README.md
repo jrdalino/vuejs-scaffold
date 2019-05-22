@@ -8,7 +8,7 @@ $ mkdir environment
 $ cd ~/environment
 ```
 
-- Vue CLI
+- Install Vue CLI
 ```
 $ npm install -g vue-cli
 ```
@@ -38,14 +38,26 @@ $ aws codecommit create-repository --repository-name myproject-consumer-web
 ### Step 1.3: Set up .gitignore
 - Automatically created by vue init
 
-### Step 1.2 Import Existing Folder to CodeCommit
+### Step 1.4: Import Existing Project Folder to CodeCommit Repo
 ```
 $ cd ~/environment/myproject-consumer-web
 $ git init
 $ git add .
 $ git commit -m "Initial Commit"
 $ git remote add origin https://git-codecommit.us-east-1.amazonaws.com/v1/repos/myproject-consumer-web
-
 $ git remote -v
 $ git push origin master
 ```
+
+### Step 1.5: Add Bootstrap 4
+```
+$ npm i bootstrap jquery popper.js
+```
+
+### Step 1.6: Add to src/main.js
+```
+import 'bootstrap'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+### Step 1.7
